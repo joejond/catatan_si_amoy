@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>leaf.png</normaloff>leaf.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="margin">
+     <number>2</number>
+    </property>
+    <property name="spacing">
+     <number>2</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QMdiArea" name="mdiArea"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionStart"/>
+   <addaction name="actionStop"/>
+   <addaction name="separator"/>
+   <addaction name="actionCH1"/>
+   <addaction name="actionCH2"/>
+   <addaction name="actionCH3"/>
+   <addaction name="actionCH4"/>
+   <addaction name="actionCOMPARE"/>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1000</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuSetting">
+    <property name="title">
+     <string>Setting</string>
+    </property>
+    <addaction name="actionModul_Akuisisi"/>
+    <addaction name="actionMode_Simulasi"/>
+    <addaction name="separator"/>
+    <addaction name="actionSetting_Motor"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuSetting"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <action name="actionStart">
+   <property name="icon">
+    <iconset>
+     <normaloff>icon/play-icon.png</normaloff>icon/play-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Start</string>
+   </property>
+  </action>
+  <action name="actionStop">
+   <property name="icon">
+    <iconset>
+     <normaloff>icon/stop-2-icon.png</normaloff>icon/stop-2-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Stop</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="icon">
+    <iconset>
+     <normaloff>icon/gnome_application_exit.ico</normaloff>icon/gnome_application_exit.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="icon">
+    <iconset>
+     <normalon>icon/info (1).ico</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="actionModul_Akuisisi">
+   <property name="icon">
+    <iconset>
+     <normaloff>icon/documents.ico</normaloff>icon/documents.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Modul Vibrasi</string>
+   </property>
+   <property name="toolTip">
+    <string>Modul Data Akuisisi</string>
+   </property>
+  </action>
+  <action name="actionParameter">
+   <property name="icon">
+    <iconset>
+     <normaloff>icon/gnome_system_monitor.ico</normaloff>icon/gnome_system_monitor.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Vibration Parameter</string>
+   </property>
+  </action>
+  <action name="actionClear_Buffer">
+   <property name="text">
+    <string>Clear Buffer</string>
+   </property>
+  </action>
+  <action name="actionSetting_Motor">
+   <property name="text">
+    <string>Motor Setting</string>
+   </property>
+  </action>
+  <action name="actionMode_Simulasi">
+   <property name="text">
+    <string>Mode Simulasi</string>
+   </property>
+  </action>
+  <action name="actionSatuan">
+   <property name="icon">
+    <iconset>
+     <normalon>icon/flowRoot6871-4.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Units</string>
+   </property>
+  </action>
+  <action name="actionCH1">
+   <property name="text">
+    <string>CH1</string>
+   </property>
+  </action>
+  <action name="actionCH2">
+   <property name="text">
+    <string>CH2</string>
+   </property>
+  </action>
+  <action name="actionCH3">
+   <property name="text">
+    <string>CH3</string>
+   </property>
+  </action>
+  <action name="actionCH4">
+   <property name="text">
+    <string>CH4</string>
+   </property>
+  </action>
+  <action name="actionDatabase">
+   <property name="text">
+    <string>Database</string>
+   </property>
+  </action>
+  <action name="actionCOMPARE">
+   <property name="text">
+    <string>COMPARE</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

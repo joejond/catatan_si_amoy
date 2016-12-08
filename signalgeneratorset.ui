@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SignalGeneratorSet</class>
+ <widget class="QWidget" name="SignalGeneratorSet">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>267</width>
+    <height>265</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>3</number>
+   </property>
+   <property name="sizeConstraint">
+    <enum>QLayout::SetDefaultConstraint</enum>
+   </property>
+   <property name="margin">
+    <number>3</number>
+   </property>
+   <item>
+    <widget class="QFrame" name="frame">
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <property name="sizeConstraint">
+       <enum>QLayout::SetDefaultConstraint</enum>
+      </property>
+      <item row="0" column="0" colspan="4">
+       <widget class="QCheckBox" name="chk_flag_simul">
+        <property name="text">
+         <string>Signal generator aktif</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Signal-1</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLineEdit" name="le_f1"/>
+      </item>
+      <item row="3" column="2">
+       <widget class="QLineEdit" name="le_a1"/>
+      </item>
+      <item row="3" column="3">
+       <widget class="QLineEdit" name="le_fasa1"/>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>[frekuensi]</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>[amplitudo]</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="3">
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>[fasa]</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QCheckBox" name="chk_sig2">
+        <property name="text">
+         <string>Signal-2</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QCheckBox" name="chk_sig3">
+        <property name="text">
+         <string>Signal-3</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0">
+       <widget class="QCheckBox" name="chk_sig4">
+        <property name="text">
+         <string>Signal-4</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" colspan="4">
+       <widget class="Line" name="line">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="0">
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>Tipe signal</string>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="1" colspan="2">
+       <widget class="QComboBox" name="cb_sig_type">
+        <item>
+         <property name="text">
+          <string>sinus</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>triangle</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>square</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="8" column="0" colspan="4">
+       <widget class="Line" name="line_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QLineEdit" name="le_f2"/>
+      </item>
+      <item row="5" column="1">
+       <widget class="QLineEdit" name="le_f3"/>
+      </item>
+      <item row="6" column="1">
+       <widget class="QLineEdit" name="le_f4"/>
+      </item>
+      <item row="4" column="2">
+       <widget class="QLineEdit" name="le_a2"/>
+      </item>
+      <item row="5" column="2">
+       <widget class="QLineEdit" name="le_a3"/>
+      </item>
+      <item row="6" column="2">
+       <widget class="QLineEdit" name="le_a4"/>
+      </item>
+      <item row="4" column="3">
+       <widget class="QLineEdit" name="le_fasa2"/>
+      </item>
+      <item row="5" column="3">
+       <widget class="QLineEdit" name="le_fasa3"/>
+      </item>
+      <item row="6" column="3">
+       <widget class="QLineEdit" name="le_fasa4"/>
+      </item>
+      <item row="7" column="0">
+       <widget class="QCheckBox" name="chk_sig5">
+        <property name="text">
+         <string>Signal-5</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="1">
+       <widget class="QLineEdit" name="le_f5"/>
+      </item>
+      <item row="7" column="2">
+       <widget class="QLineEdit" name="le_a5"/>
+      </item>
+      <item row="7" column="3">
+       <widget class="QLineEdit" name="le_fasa5"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="leftMargin">
+      <number>50</number>
+     </property>
+     <property name="rightMargin">
+      <number>50</number>
+     </property>
+     <item>
+      <widget class="QPushButton" name="pb_update_set_siggen">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Update Setting</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,39 @@
+3 Sept 2012
+==================
+GIT sudah OK.
+untuk push ke server : $ git push furkan@192.168.1.13:git/qt_simul NAMA_BRANCH
+untuk clone $ git clone furkan@192.168.1.13:git/qt_simul master (mestinya branch master).
+
+4 Sept 2012
+==================
+buat database SQLITE sudah OK.
+table waktu sudah ok, note sudah bisa dimasukkan langsung (jangan lupa tekan enter).
+Bagian komunikasi dengan kontroller motor (tulung Pak Herry).
+
+5 Sept 2012
+==================
+- program server_udp.c mulai dibuat
+- server_udp.c banyak contek dari versi UIP yang sudah berjalan di motor bakar
+- sudah bisa menampilkan grafik dari dummy server_simul
+
+6 Sept 2012
+==================
+- qwtplot3d
+- install libglu1-mesa-dev
+- simpan SQLITE sudah OK
+- sudah ditest pada komputer lain (192.168.1.13)
+- kadang2 hilang paket sudah OK (hilang tidak apa, wong UDP).
+- mulai membetulkan setting parameter vibrasi
+
+
+TODO BESAR:
+- buka database
+- about
+- icon
+
+16 Nov 2012
+=================
+ke iqbal :
+- zoom pada waveform, jika setting param diubah, lebar waveform belum langsung berubah.
+- setting satuan2 pada sumbu. Sesuaikan dengan sensitifitas sensor yang dimasukkan.
+
